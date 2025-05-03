@@ -118,3 +118,5 @@ class Command(BaseCommand):
             OrderItem.objects.bulk_create(order_items, batch_size)
 
 
+
+# python manage.py generate_data --users 20000 --products 1000 --orders 100000 --orderitems 300000
