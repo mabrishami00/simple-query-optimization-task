@@ -6,7 +6,7 @@ from django.utils.translation import gettext_lazy as _
 
 class FredUser(AbstractUser):
     username = models.CharField(
-        _("phone_number"),
+        _("phone number"),
         max_length=50,
         unique=True,
         validators=[
@@ -16,7 +16,7 @@ class FredUser(AbstractUser):
             )
         ],
     )
-    modified_date = models.DateTimeField("modified_date", auto_now=True)
+    modified_date = models.DateTimeField(_("modified date"), auto_now=True)
 
     def __str__(self):
         return f"{self.username}"
