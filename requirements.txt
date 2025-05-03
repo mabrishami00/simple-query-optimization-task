@@ -12,9 +12,15 @@ django==4.2.20
     #   djangorestframework
 djangorestframework==3.16.0
     # via -r requirements.in
+faker==37.1.0
+    # via -r requirements.in
+numpy==2.2.5
+    # via -r requirements.in
 psycopg2==2.9.10
     # via -r requirements.in
 python-dotenv==1.1.0
     # via -r requirements.in
 sqlparse==0.5.3
     # via django
+tzdata==2025.2
+    # via faker
