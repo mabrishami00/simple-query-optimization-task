@@ -119,4 +119,3 @@ class Command(BaseCommand):
 
 
 
-# python manage.py generate_data --users 20000 --products 1000 --orders 100000 --orderitems 300000

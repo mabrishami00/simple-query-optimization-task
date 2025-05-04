@@ -17,6 +17,7 @@ class FredUser(AbstractUser):
         ],
     )
     modified_date = models.DateTimeField(_("modified date"), auto_now=True)
+    date_joined = models.DateTimeField(_("date joined"), auto_now_add=True)
 
     def __str__(self):
         return f"{self.username}"

@@ -5,5 +5,5 @@ from main_app.serializers import OrderItemSerializer
 
 
 class OrderItemViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset         = OrderItem.objects.all()
+    queryset = OrderItem.objects.all()
     serializer_class = OrderItemSerializer
